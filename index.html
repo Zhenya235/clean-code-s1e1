@@ -6,26 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
     <title>Todo App</title>
 </head>
 
 <body>
-    <main>
-        <div class="img-matrix">
+    <header class="header">
+        <div class="header-image">
             <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
-            <a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">
+            <a class="header-link" href="https://goal-life.com/page/method/matrix-eisenhower">
                 Want more details?
             </a>
         </div>
+    </header>
+    <main class="centered-main-page-element">
         <article>
-
             <div class="main-container">
                 <section>
-                    <p id='topAddElement'>
-                        <label for="new-task">Add Item</label>
+                    <p id="top-add-element">
+                        <label for="new-value">Add Item</label>
                     <div class="row-wrapper">
-                        <input id='new-task' class="task" type="text">
+                        <input id="new-value" class="task" type="text">
 
                         <button>Add</button>
                     </div>
@@ -34,26 +36,26 @@
 
                 <section>
                     <h3>Todo</h3>
-                    <ul id='incompleteTasks'>
+                    <ul id="incomplete-tasks">
                         <li>
-                            <input type='checkbox'>
+                            <input type="checkbox">
                             <label class="task">Pay Bills</label>
                             <input type="text" class="task">
 
                             <button class="edit">Edit</button>
                             <button class="delete">
-                                <img src="./remove.svg">
+                                <img src="./remove.svg" alt="Remove">
                             </button>
                         </li>
 
-                        <li class="editMode">
+                        <li class="edit-mode">
                             <input type="checkbox">
                             <label class="task">Go Shopping</label>
                             <input type="text" value="Go Shopping" class="task">
 
-                            <button class='edit'>Save</button>
+                            <button class="edit">Save</button>
                             <button class="delete">
-                                <img src="./remove.svg">
+                                <img src="./remove.svg" alt="Remove">
                             </button>
                         </li>
                     </ul>
@@ -61,7 +63,7 @@
 
                 <section>
                     <h3>Completed</h3>
-                    <ul id="completedTasks">
+                    <ul id="completed-tasks">
                         <li>
                             <input type="checkbox" checked>
                             <label class="task">See the Doctor</label>
@@ -69,7 +71,7 @@
 
                             <button class="edit">Edit</button>
                             <button class="delete">
-                                <img src="./remove.svg">
+                                <img src="./remove.svg" alt="Remove">
                             </button>
                         </li>
                     </ul>
